@@ -13,7 +13,7 @@
             <el-form-item prop="code">
                 <el-input type="text" v-model="loginForm.code" placeholder="点击图片更换验证码"
                     style="width:250px; margin-right: 5px;"></el-input>
-                <img src="captchaUrl">
+                <img :src="captchaUrl">
             </el-form-item>
             <el-checkbox v-model="checked" class="loginRememberMe">记住我</el-checkbox>
             <el-button type="primary" style="width: 100%" @click="submitLogin">登录</el-button>
